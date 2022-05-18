@@ -1,0 +1,18 @@
+﻿{
+  "Name": "SERVER NAME HERE",
+  "Description": "Enter a description",
+  "Port": 27015,
+  "QueryPort": 27016,
+  "MaxConnectedUsers": 40,
+  "MaxConnectedAdmins": 4,
+  "ServerFps": 30,
+  "SaveName": "world1",
+  "Password": "SVRPASSWD-HERE",
+  "Secure": true,
+  "ListOnMasterServer": true,
+  "AutoSaveCount": 50,
+  "AutoSaveInterval": 300,
+  "GameSettingsPreset": "",
+  "AdminOnlyDebugEvents": true,
+  "DisableDebugEvents": false
+}
