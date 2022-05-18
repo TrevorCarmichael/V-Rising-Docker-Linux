@@ -5,7 +5,7 @@ services:
     image: vrising:latest
     volumes: 
       - /home/googlrr/VRisingServer:/root/.wine/drive_c/users/root/AppData/LocalLow/Stunlock Studios/VRisingServer/Saves
-      - /home/googlrr/VRisingSettings:/root/.wine/drive_c/users/root/AppData/LocalLow/'Stunlock Studios'/VRisingServer/Settings/
+      - /home/googlrr/VRisingSettings:/root/.wine/drive_c/users/root/AppData/LocalLow/Stunlock Studios/VRisingServer/Settings/
     ports: 
       - "27015:27015/udp"
       - "27016:27016/udp"
