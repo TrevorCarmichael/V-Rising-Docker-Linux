@@ -14,12 +14,14 @@ cd V-Rising-Docker-Linux
 
 4. Move all the files in /settings/ to some location.
 
-4. Build the image
+5. Update `ENV TZ="America/New_York"` in `dockerfile` to [your timezone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+
+6. Build the image
 sudo docker build . -t vrising:latest
 
-5. Modify docker compose, set a path for where you want your saves. Set the save and settings directories
+7. Modify docker compose, set a path for where you want your saves. Set the save and settings directories
 
-6. compose
+8. compose
 sudo docker-compose up -d 
 
 Really messy setup but this was the only way I could figure out how to work it lol. Never used Wine before. Hope for a native linux server soon! 
