@@ -1,4 +1,7 @@
-FROM ubuntu
+FROM ubuntu:20.04
+
+ENV DEBIAN_FRONTEND="noninteractive"
+ENV TZ="America/New_York"
 
 RUN dpkg --add-architecture i386 \
     && apt update \
