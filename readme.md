@@ -21,3 +21,13 @@ This isn't really meant to be a guide, just publishing because at the moment not
 
 Really messy setup but this was the only way I could figure out how to work it lol. Never used Wine before. Hope for a native linux server soon! 
 
+# Updating the server
+Before and after updating the server it might be sensible to check the currently running version:  
+`docker logs vrising-server | grep "VRisingServer v" -A1 | tail -2` 
+
+This container only downloads/updates the server application when `/root/.wine/drive_c/steamcmd/steaminstalled.txt` (which is created on first startup) does not exist inside the container. There are two ways to update the server:
+- `docker exec vrising-server rm /root/.wine/drive_c/steamcmd/steaminstalled.txt && docker restart vrising-server`  
+to delete the file and restart the container, which updates the already installed server.  
+
+- `docker-compose up --build -d`  
+to recreate the container from scratch without `steaminstalled.txt`.
