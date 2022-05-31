@@ -12,12 +12,9 @@ cd V-Rising-Docker-Linux
 
 3. Modify the ServerGameSettings.json and ServerHostSettings.json for whatever you want. 
 
-4. Build the image
-sudo docker-compose build 
+4. Modify docker compose, set a path for where you want your saves. Set the save and settings directories
 
-5. Modify docker compose, set a path for where you want your saves. Set the save and settings directories
-
-6. compose
+5. Build and Start Container
 sudo docker-compose up -d 
 
 Really messy setup but this was the only way I could figure out how to work it lol. Never used Wine before. Hope for a native linux server soon! 
