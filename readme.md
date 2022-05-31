@@ -12,10 +12,8 @@ cd V-Rising-Docker-Linux
 
 3. Modify the ServerGameSettings.json and ServerHostSettings.json for whatever you want. 
 
-4. Move all the files in /settings/ to some location.
-
 4. Build the image
-sudo docker build . -t vrising:latest
+sudo docker-compose build 
 
 5. Modify docker compose, set a path for where you want your saves. Set the save and settings directories
 
